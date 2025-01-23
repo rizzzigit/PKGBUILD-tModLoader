@@ -1,14 +1,14 @@
 pkgbase = tmodloader-bin
 	pkgdesc = An open-source, community-driven, modification and expansion of the Terraria game that makes it possible to make and play mods.
-	pkgver = 2024.11.3.0_1.4.4.9
+	pkgver = 2024.11.3.2_1.4.4.9
 	pkgrel = 1
 	epoch = 0
 	url = https://www.tmodloader.net/
 	arch = x86_64
 	license = MIT
 	depends = unzip>=6.0
-	noextract = tml-2024.11.3.0.zip
-	source = tml-2024.11.3.0.zip::https://github.com/tModLoader/tModLoader/releases/download/v2024.11.3.0/tModLoader.zip
-	sha256sums = 4b5a76226e801cd50fb0d841ef2f83eb69069502e6ec54182c843a2a61272c14
+	noextract = tml-2024.11.3.2.zip
+	source = tml-2024.11.3.2.zip::https://github.com/tModLoader/tModLoader/releases/download/v2024.11.3.2/tModLoader.zip
+	sha256sums = b70ebc5071b17c2b73c6f0461f3a7baa30d317e8cbcaaae6832845643ef336e0
 
 pkgname = tmodloader-bin
