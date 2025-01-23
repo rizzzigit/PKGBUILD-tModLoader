@@ -15,10 +15,12 @@ depends=('unzip>=6.0')
 
 source=(
   "tml-$tmlver.zip::https://github.com/tModLoader/tModLoader/releases/download/v$tmlver/tModLoader.zip"
+  "tml-$tmlver-LICENSE"::"https://raw.githubusercontent.com/tModLoader/tModLoader/df3e96a1f2e35f2b8e10b3a86de2d979eb1a5f7b/LICENSE"
 )
 
 sha256sums=(
   "b70ebc5071b17c2b73c6f0461f3a7baa30d317e8cbcaaae6832845643ef336e0"
+  "472279759f98a8e7c220321257ffdd181c99072e46a36ad673cd82e776636066"
 )
 
 noextract=("tml-$tmlver.zip")
@@ -35,5 +37,6 @@ package() {
 
   install -Dm444 "tml-$tmlver.zip" "$pkgdir/opt/tModLoader/tml.zip"
   install -Dm555 -t "$pkgdir/opt/tModLoader" "$startdir"/*.sh
+  install -Dm444 -t "$pkgdir/usr/share/licenses/$pkgname" "$startdir/tml-$tmlver-LICENSE"
   echo "$tmlver" | install -Dm444 "/dev/stdin" "$pkgdir/opt/tModLoader/ver.txt"
 }
