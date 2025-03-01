@@ -1,6 +1,6 @@
 # Maintainer: Rizzzi Git <rizzzigit@gmail.com>
 
-tmlver="2024.12.3.0"
+tmlver="2025.01.3.1"
 terrariaver="1.4.4.9"
 pkgrel=1
 epoch=0
@@ -15,11 +15,11 @@ depends=('unzip>=6.0')
 
 source=(
   "tml-$tmlver.zip::https://github.com/tModLoader/tModLoader/releases/download/v$tmlver/tModLoader.zip"
-  "tml-$tmlver-LICENSE"::"https://raw.githubusercontent.com/tModLoader/tModLoader/28c48952bb35591dec833dd113a8ee4a20db5e8b/LICENSE"
+  "tml-$tmlver-LICENSE"::"https://raw.githubusercontent.com/tModLoader/tModLoader/b9581d52d6b9508ae88f308c62ebe4d1a447dc6a/LICENSE"
 )
 
 sha256sums=(
-  "13978d289e56aa8ab6f5c32ad1f7cb7ebddc1a5862444cb9282401b26af1c5a2"
+  "f7e53016aa74b4a2730a3aa95bdd514ad477eaa23bd3406eecb9efde38aa1764"
   "472279759f98a8e7c220321257ffdd181c99072e46a36ad673cd82e776636066"
 )
 
